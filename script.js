@@ -1,29 +1,23 @@
-// let a is being the number that should be raised to a degree
-// let b is degree itself
+// let number be the number of stairs in staircase
 
-// with the help of do and while we can clarify if the number or degree follows the rules that has been staited
+// let symbol be the contain of our stairs
 
-// the first rule is that number and degree must not be NOT number and must not equel to zero
-
+// we use do n while to check if the number entered is actually a number
 do {
-    var a = +prompt('Введите число')
-} while (isNaN(a) || a===0) {
-    console.log(a);
+    var number = +prompt('Введите число')
+} while (isNaN(number) || number===0)
+
+
+let symbol = prompt('Введите символ')
+
+let end = prompt('Введите конечный символ')
+
+// use for 
+// i to posses to 1
+// step = '' means that our symbol can be both either a number or symbol
+// stp += means that we posses the symbol and add another symbol added
+
+for (let i=1, result=''; i<=number; i++) {
+    result+= symbol;
+    console.log(result + end);
 }
-
-do {
-    var b = +prompt('Введите степень')
-} while (isNaN(b) || b===0) {
-    console.log(b);
-}
-
-// the main concept of thisis the saying that "WHILE this DO another thing"
-
-// in JS double multiplying means rising to de 
-
-
-let result = a**b
-
-alert(result)
-
-console.log(result);
